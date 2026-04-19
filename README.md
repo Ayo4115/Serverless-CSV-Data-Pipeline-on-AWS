@@ -31,3 +31,16 @@ final output to the csv-final-data bucket.
 
 **Amazon QuickSight:** A cloud-scale business intelligence (BI) service for data visualization.
 
+**IAM Role and Policies:** Ensure secure access to S3, Lamnda, Glue and Quicksight... (Permmission)
+
+## Step 1: Create 3 S3 Buckets
+
+1. Go to S3 Console > Create bucket.
+2. Create: csv-raw-data, csv-processed-data, and csv-final-data
+
+<img width="1346" height="353" alt="image" src="https://github.com/user-attachments/assets/62393e69-266c-43cd-a161-64680b29c83c" />
+
+
+
+
+
