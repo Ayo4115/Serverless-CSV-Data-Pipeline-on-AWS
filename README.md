@@ -67,14 +67,21 @@ Choose S3 or Athena (Athena is easier if you use the Glue Catalog)
 <img width="1359" height="640" alt="Screenshot 2026-04-18 172511" src="https://github.com/user-attachments/assets/cfdcb695-068d-41e0-b58f-
  99e3014215dc" />
 
- <img width="1103" height="621" alt="image" src="https://github.com/user-attachments/assets/53196ae9-dcfd-4a86-9b98-cc4da928d85d" />
-
-
 
 
 ## Step 2: Configure the Lambda Function 
 
 Create Function: Choose "Author from scratch" and select Python 3.
+
+<img width="1103" height="621" alt="image" src="https://github.com/user-attachments/assets/2b9f8024-6a33-4e59-8f32-e0daa31fceee" />
+
+⚙️ Environment Variables (Lambda) 
+Set these in the Configuration > Environment variables tab of your Lambda function. 
+
+<img width="1071" height="476" alt="image" src="https://github.com/user-attachments/assets/0ab53dc8-9e5f-48dc-b5b3-4667832ff1af" />
+
+
+
 
 
 
