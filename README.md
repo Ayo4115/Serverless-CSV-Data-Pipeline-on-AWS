@@ -101,10 +101,66 @@ Set these in the Configuration > Environment variables tab of your Lambda functi
 
 
 
+```bash
+import json
+import boto3
+import pandas as pd
+import os
+import io
+import urllib.parse
 
+# Initialize S3 client using the REGION_NAME from your environment variables
+s3_client = boto3.client('s3', region_name=os.environ.get('REGION_NAME', 'us-east-1'))
 
+def lambda_handler(event, context):
+    try:
+        # 1. Get the bucket and file key from the S3 trigger event
+        source_bucket = event['Records']['s3']['bucket']['name']
+        file_key = urllib.parse.unquote_plus(event['Records']['s3']['object']['key'], encoding='utf-8')
+        
+        # 2. Pull the target bucket name directly from your Environment Variables
+        target_bucket = os.environ['PROCESSED_BUCKET']
+        
+        print(f"Processing: {file_key} from {source_bucket}")
 
+        # 3. Read the CSV file into a DataFrame
+        response = s3_client.get_object(Bucket=source_bucket, Key=file_key)
+        df = pd.read_csv(io.BytesIO(response['Body'].read()))
+        
+        # 4. DATA CLEANING: Example steps
+        # - Remove rows that are entirely empty
+        # - Fill any remaining empty cells with 'N/A'
+        df_cleaned = df.dropna(how='all').fillna('N/A')
+        
+        # 5. Convert cleaned data back to CSV string
+        csv_buffer = io.StringIO()
+        df_cleaned.to_csv(csv_buffer, index=False)
+        
+        # 6. Upload to csv-processed-data-ayo
+        target_key = f"processed_{file_key}"
+        s3_client.put_object(
+            Bucket=target_bucket, 
+            Key=target_key, 
+            Body=csv_buffer.getvalue()
+        )
+        
+        print(f"SUCCESS: {target_key} uploaded to {target_bucket}")
+        
+        return {
+            'statusCode': 200,
+            'body': json.dumps(f"Cleaned file {target_key} is ready!")
+        }
 
+    except Exception as e:
+        print(f"ERROR: {str(e)}")
+        return {
+            'statusCode': 500,
+            'body': json.dumps("Error during CSV processing.")
+        }
+
+```
+
+ghhhh
 
 
 
