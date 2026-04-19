@@ -76,9 +76,29 @@ Create Function: Choose "Author from scratch" and select Python 3.
 <img width="1103" height="621" alt="image" src="https://github.com/user-attachments/assets/2b9f8024-6a33-4e59-8f32-e0daa31fceee" />
 
 ⚙️ Environment Variables (Lambda) 
+
+
 Set these in the Configuration > Environment variables tab of your Lambda function. 
 
+
 <img width="1071" height="476" alt="image" src="https://github.com/user-attachments/assets/0ab53dc8-9e5f-48dc-b5b3-4667832ff1af" />
+
+
+## This AWS Lambda function is designed to automatically process CSV files uploaded to an S3 bucket. Here’s how it works in simple terms:
+
+1. Triggered by S3 Upload — Whenever a file is uploaded to a specific S3 bucket (csv-raw-data), this function runs automatically.
+
+2. Reads the File — It fetches the CSV file from S3 and reads its content.
+
+3. Cleans the Data — The function removes rows that contain missing values, keeping only complete rows.
+   
+4. Creates a New CSV — It writes the cleaned data into a new CSV file in memory.
+
+5. Uploads the Processed File — Finally, the function saves the cleaned file into a different S3 bucket (csv-processed-data).
+
+
+   <img width="1066" height="546" alt="image" src="https://github.com/user-attachments/assets/98aae8bf-2470-413c-bf9e-9824fc4b2cbd" />
+
 
 
 
