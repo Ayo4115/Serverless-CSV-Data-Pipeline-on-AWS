@@ -41,6 +41,43 @@ final output to the csv-final-data bucket.
 <img width="1346" height="353" alt="image" src="https://github.com/user-attachments/assets/62393e69-266c-43cd-a161-64680b29c83c" />
 
 
+## Step 2:
+
+Create an IAM Role for Lambda:
+
+Go to the IAM Console → Roles → Create role.
+Select AWS Service as the trusted entity and choose Lambda.
+
+<img width="1344" height="520" alt="Screenshot 2026-04-18 155638" src="https://github.com/user-attachments/assets/f26c70ff-576b-404f-b398-a9537d640557" />
+
+. AmazonS3FullAccess (to read/write S3 buckets).
+. AWSGlueServiceRole (for Glue operations).
+
+<img width="1345" height="437" alt="image" src="https://github.com/user-attachments/assets/a239ab07-f3fb-4b1f-8f9d-22f44562a6b1" />
+
+
+🔒 #@ Security Note: Attach only the permissions necessary for your pipeline to reduce security risks.
+
+
+## Step 3: Setup QuickSight Visualization 
+
+Go to QuickSight > New Dataset.
+Choose S3 or Athena (Athena is easier if you use the Glue Catalog)
+
+<img width="1359" height="640" alt="Screenshot 2026-04-18 172511" src="https://github.com/user-attachments/assets/cfdcb695-068d-41e0-b58f-
+ 99e3014215dc" />
+
+ <img width="1103" height="621" alt="image" src="https://github.com/user-attachments/assets/53196ae9-dcfd-4a86-9b98-cc4da928d85d" />
+
+
+
+
+## Step 2: Configure the Lambda Function 
+
+Create Function: Choose "Author from scratch" and select Python 3.
+
+
+
 
 
 
