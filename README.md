@@ -407,12 +407,33 @@ Let’s create a dashboard to visualize the insights from the transformed CSV da
 
 . Select the ProcessedCSVData dataset.
 
+## Bar Chart: Analyse trends over time.
+
 <img width="1353" height="615" alt="image" src="https://github.com/user-attachments/assets/9e8bb0ac-2b82-4ad8-a64a-2b6b5ad88233" />
 
+
+## Line Chart: Analyse trends over time.
 
 <img width="1357" height="601" alt="image" src="https://github.com/user-attachments/assets/8384f325-60ab-46af-9b0e-d564de301f34" />
 
 
+## Pie Chart: Analyse trends over time.
+
+
 <img width="1361" height="631" alt="image" src="https://github.com/user-attachments/assets/5c8eb086-6914-4c54-a766-9b0735f5099a" />
+
+
+
+
+## Share and Publish the Dashboard
+
+
+Select Publish Dashboard to make it accessible to other users.
+
+
+<img width="1343" height="609" alt="image" src="https://github.com/user-attachments/assets/b1123fa6-b902-4852-b38a-113cc1579d48" />
+
+
+
 
 
