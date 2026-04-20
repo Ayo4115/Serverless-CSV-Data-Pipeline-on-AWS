@@ -160,7 +160,28 @@ def lambda_handler(event, context):
 
 ```
 
-ghhhh
+## Setup S3 Event Trigger for Lambda
 
+Now that our Lambda function is set up, we need to configure the raw data S3 bucket to automatically trigger the Lambda function whenever a new file is uploaded in the bucket.
+
+. Go to the S3 Console and select your csv-raw-data-ayo bucket.
+. Navigate to the Properties tab and scroll down to Event notifications.
+
+<img width="1347" height="338" alt="Screenshot 2026-04-18 162604" src="https://github.com/user-attachments/assets/99746883-7645-4b5a-8017-89a33536ccb7" />
+
+<img width="1365" height="545" alt="Screenshot 2026-04-18 162945" src="https://github.com/user-attachments/assets/b98488c5-102e-4345-8641-07d4e124cc78" />
+
+<img width="1346" height="550" alt="Screenshot 2026-04-18 163020" src="https://github.com/user-attachments/assets/9f80d98a-74f8-4100-ad0f-016db7413979" />
+
+<img width="1347" height="530" alt="Screenshot 2026-04-18 163057" src="https://github.com/user-attachments/assets/7edc98ea-c7d1-4c0f-86ff-e517fa173b48" />
+
+
+## Step 4{
+
+Upload a Sample CSV File:
+
+Go to the S3 Console and navigate to your csv-raw-data-ayo bucket.
+
+<img width="1354" height="438" alt="image" src="https://github.com/user-attachments/assets/837958a7-2caa-4807-a2b9-cf5b6aedaf78" />
 
 
