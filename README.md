@@ -216,4 +216,47 @@ Go to the S3 Console and navigate to your csv-raw-data-ayo bucket.
 
 <img width="1354" height="550" alt="image" src="https://github.com/user-attachments/assets/3749ae41-4326-4b38-a754-1f76af91655b" />
 
+<img width="1365" height="380" alt="image" src="https://github.com/user-attachments/assets/c67bf7b6-1668-49bc-9882-02014c897e8a" />
+
+
+**Select the created Crawler and click on Run.**
+
+<img width="1369" height="547" alt="image" src="https://github.com/user-attachments/assets/fdb46f5e-855c-4533-9e57-949493cb243d" />
+
+
+<img width="1344" height="548" alt="image" src="https://github.com/user-attachments/assets/c3223db1-6ca6-457c-b1cf-1db342cea959" />
+
+
+## Step 7:
+
+Create and Configure an AWS Glue Job Using Visual ETL
+
+Click ETLJob.
+
+Select Visual ETL.
+
+<img width="1338" height="553" alt="image" src="https://github.com/user-attachments/assets/f9f6c1f0-27fd-4d8c-8db1-922d76d68347" />
+
+## Define the Source:
+
+In the visual canvas, click on the add button and go to Data Source.
+
+. Choose the AWS Glue Data Catalog. Under the database, choose the created csv_data_pipeline_catalog database.
+
+. Under the table, choose the csv_processed_data table created by the Crawler job.
+
+
+
+<img width="1362" height="544" alt="image" src="https://github.com/user-attachments/assets/90846cef-c821-44b8-bd11-1bd5cb4b0e8a" />
+
+
+Add Transformations:
+
+Click the + button after the source block and choose Change Schema for basic transformations.
+
+
+<img width="1357" height="537" alt="image" src="https://github.com/user-attachments/assets/72009a9a-cab2-47ee-a039-481c6a5e12e4" />
+
+
+<img width="643" height="499" alt="image" src="https://github.com/user-attachments/assets/75c9579c-a67e-4eef-a92d-604503640a9c" />
 
