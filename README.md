@@ -260,3 +260,42 @@ Click the + button after the source block and choose Change Schema for basic tra
 
 <img width="643" height="499" alt="image" src="https://github.com/user-attachments/assets/75c9579c-a67e-4eef-a92d-604503640a9c" />
 
+
+## Define the Target:
+
+Click the + button after the transformation and select Data Target.
+
+. Choose S3 as the target.
+
+. Enter the S3 path where the transformed CSV file should be stored (e.g., s3://csv-final-data/).
+
+. Format: Select CSV as the output format.
+
+. Compression: Choose GZIP as the compression type
+
+<img width="1355" height="546" alt="image" src="https://github.com/user-attachments/assets/95e20bde-62e4-45d6-9954-30932ea649fb" />
+
+
+
+## Configure Job Properties:
+
+Click the Job Details tab on the right panel and provide the following details:
+
+Name: CSVDataTransformation
+
+IAM Role: Select an existing Glue role with access to S3 or create a new one.
+
+Leave other advanced settings as default.
+
+
+<img width="1247" height="493" alt="image" src="https://github.com/user-attachments/assets/2d899174-6f80-499b-84d8-bfd001e1ac49" />
+
+
+Save and Run the Job:
+
+Click Save and then Run.
+
+Monitor the job status in the Runs tab. It may take a few minutes to complete.
+
+
+<img width="1337" height="226" alt="image" src="https://github.com/user-attachments/assets/a8ee6900-f426-424e-a4da-e719aea45341" />
