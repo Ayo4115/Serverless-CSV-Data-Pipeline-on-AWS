@@ -299,3 +299,18 @@ Monitor the job status in the Runs tab. It may take a few minutes to complete.
 
 
 <img width="1337" height="226" alt="image" src="https://github.com/user-attachments/assets/a8ee6900-f426-424e-a4da-e719aea45341" />
+
+
+## Verify and Prepare Transformed Data for Visualization
+
+Navigate to the S3 Bucket:
+
+. Open the AWS S3 Console.
+
+. Locate and select the bucket where the transformed data is stored (e.g., csv-final-data-Ayo).
+
+
+<img width="1328" height="384" alt="image" src="https://github.com/user-attachments/assets/40380be1-07ca-4144-aa38-b9a00321c64a" />
+
+
+
