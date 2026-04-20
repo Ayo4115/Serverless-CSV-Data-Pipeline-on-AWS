@@ -176,7 +176,7 @@ Now that our Lambda function is set up, we need to configure the raw data S3 buc
 <img width="1347" height="530" alt="Screenshot 2026-04-18 163057" src="https://github.com/user-attachments/assets/7edc98ea-c7d1-4c0f-86ff-e517fa173b48" />
 
 
-## Step 4{
+## Step 4:
 
 Upload a Sample CSV File:
 
