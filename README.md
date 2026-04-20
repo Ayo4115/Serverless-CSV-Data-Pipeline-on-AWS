@@ -314,3 +314,4 @@ Navigate to the S3 Bucket:
 
 
 
+<img width="1365" height="525" alt="image" src="https://github.com/user-attachments/assets/57688980-fab0-4815-bc42-510847dba740" />
