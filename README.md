@@ -309,9 +309,95 @@ Navigate to the S3 Bucket:
 
 . Locate and select the bucket where the transformed data is stored (e.g., csv-final-data-Ayo).
 
+## Download the ZIP File
+
+Click on the folder where the output is stored.
 
 <img width="1328" height="384" alt="image" src="https://github.com/user-attachments/assets/40380be1-07ca-4144-aa38-b9a00321c64a" />
 
 
+## Extract and Rename the File
+
+On your computer, extract the contents of the ZIP file.
+Locate the extracted file (it may not have an extension).
+Rename the file to include a .csv extension at the end.
+Re-upload the CSV to S3
+
+Go back to the AWS S3 Console.
+Click on Upload and select the renamed .csv file.
 
 <img width="1365" height="525" alt="image" src="https://github.com/user-attachments/assets/57688980-fab0-4815-bc42-510847dba740" />
+
+
+
+. It is now ready for visualization and analytics tasks. You can click on the csv file and copy the Object URL to use it for the further steps.
+
+
+<img width="1386" height="538" alt="image" src="https://github.com/user-attachments/assets/19f92d48-0b76-412e-878a-077ad95e4bdf" />
+
+
+## Step 8:
+
+## Data Visualization with Amazon QuickSight
+
+Steps to be Performed 👩‍💻
+
+1. Connect to the Data Source
+
+2. Build a QuickSight Dashboard
+
+3. Share and Publish the Dashboard
+4. 
+#1 Connect to the Data Source
+
+We’ve successfully automated the ingestion and transformation of CSV data using S3, Lambda, and AWS Glue. The final step is to visualize 
+
+this processed data using Amazon QuickSight, which will help turn processed data into actionable insights.
+
+We need to connect QuickSight to the processed data stored in S3.
+
+In the QuickSight console, go to the Datasets section and click New Dataset.
+
+Select S3 as the data source.
+
+<img width="1283" height="554" alt="image" src="https://github.com/user-attachments/assets/0c20337f-9a6b-42d1-ad96-2c2266e84d97" />
+
+Provide the following details:
+
+Data Source Name: ProcessedCSV
+
+Manifest File: Create a manifest file in your local machine with the following content and upload it from your local machine. Add the 
+
+Object URL you copied earlier and replace it in the placeholder.
+
+
+## json
+
+```bash
+{
+    "fileLocations": [
+        {
+            "URIPrefixes": [
+                "ENTER YOUR OBJECT URL HERE"
+            ]
+        }
+    ],
+    "globalUploadSettings": {
+        "format": "CSV",
+        "delimiter": ",",
+        "textqualifier": "\"",
+        "containsHeader": "true"
+    }
+}
+```
+
+
+
+<img width="1356" height="626" alt="image" src="https://github.com/user-attachments/assets/94a6e3de-8729-4584-aec8-73e6d7c88fc9" />
+
+
+<img width="1359" height="631" alt="image" src="https://github.com/user-attachments/assets/a5602ac5-65bf-43a2-b435-135e8fe82362" />
+
+
+
+
