@@ -371,7 +371,7 @@ Manifest File: Create a manifest file in your local machine with the following c
 Object URL you copied earlier and replace it in the placeholder.
 
 
-## json
+## json (Manifest file(
 
 ```bash
 {
@@ -399,5 +399,20 @@ Object URL you copied earlier and replace it in the placeholder.
 <img width="1359" height="631" alt="image" src="https://github.com/user-attachments/assets/a5602ac5-65bf-43a2-b435-135e8fe82362" />
 
 
+Build a QuickSight Dashboard
+
+Let’s create a dashboard to visualize the insights from the transformed CSV data.
+
+. Click Add to create a new analysis.
+
+. Select the ProcessedCSVData dataset.
+
+<img width="1353" height="615" alt="image" src="https://github.com/user-attachments/assets/9e8bb0ac-2b82-4ad8-a64a-2b6b5ad88233" />
+
+
+<img width="1357" height="601" alt="image" src="https://github.com/user-attachments/assets/8384f325-60ab-46af-9b0e-d564de301f34" />
+
+
+<img width="1361" height="631" alt="image" src="https://github.com/user-attachments/assets/5c8eb086-6914-4c54-a766-9b0735f5099a" />
 
 
