@@ -185,3 +185,35 @@ Go to the S3 Console and navigate to your csv-raw-data-ayo bucket.
 <img width="1354" height="438" alt="image" src="https://github.com/user-attachments/assets/837958a7-2caa-4807-a2b9-cf5b6aedaf78" />
 
 
+ ## Step 5:
+ 
+ Setup an AWS Glue Data Catalog
+
+ . Navigate to the AWS Glue Console.
+ . Click Data Catalogs → Databases → Add Database.
+ . Provide the following details:
+ . Database Name: csv_data_pipeline_catalog
+ . Click Create database.
+
+ 
+<img width="1353" height="439" alt="image" src="https://github.com/user-attachments/assets/1eb6a70c-401f-4451-ba24-54583621bf47" />
+
+
+## Step 6:
+
+ Create a Crawler to Discover Data Schema
+
+ . Go to Crawlers and click Create Crawler.
+
+ <img width="1333" height="627" alt="Screenshot 2026-04-18 173846" src="https://github.com/user-attachments/assets/36d23512-d761-44f6-a614-82c47e44121b" />
+
+
+<img width="1350" height="550" alt="image" src="https://github.com/user-attachments/assets/2b50aaf8-3127-4211-be97-e54a1f6f0e34" />
+
+
+<img width="1356" height="605" alt="image" src="https://github.com/user-attachments/assets/5cafdbfb-bf38-4107-82a4-ee08c98afa46" />
+
+
+<img width="1354" height="550" alt="image" src="https://github.com/user-attachments/assets/3749ae41-4326-4b38-a754-1f76af91655b" />
+
+
